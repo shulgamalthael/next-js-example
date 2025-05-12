@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Card = () => {
+export interface ICard {
+    id: number;
+}
+
+const GridCard = () => {
     return(
         <div className="flex group flex-col justify-between px-[22px] pt-[22px] hover:shadow-[0_0_30px_0_rgba(0,0,0,0.28)]">
             <div className="relative">
@@ -76,4 +80,4 @@ const Card = () => {
     )
 }
 
-export default Card;
+export default GridCard;
