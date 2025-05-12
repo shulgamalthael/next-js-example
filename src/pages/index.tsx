@@ -1,5 +1,5 @@
 import Head from "next/head";
-import {Fragment, ReactElement, useCallback, useState} from "react";
+import {Fragment, ReactElement} from "react";
 import BaseLayout from "@/layouts/Base.layout";
 import HomePage from "@/components/HomePage";
 import { withI18nNamespaces } from "@/lib/withI18n";
@@ -21,4 +21,4 @@ function Home() {
 
 export default Home;
 
-export const getStaticProps = withI18nNamespaces();
+export const getServerSideProps = withI18nNamespaces();
